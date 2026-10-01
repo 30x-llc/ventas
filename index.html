@@ -1,0 +1,407 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0a0a0a"><link rel="icon" href="favicon.svg" type="image/svg+xml"><title>Expertiz en Ventas · 30X</title><meta name="description" content="La vertical de ventas de 30X: metodo comercial, LinkedIn e IA. Proximos inicios: 6 de octubre y 9 de noviembre de 2026."><meta property="og:title" content="Expertiz en Ventas · 30X"><meta property="og:type" content="website"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"><style>:root{--surface-raised:#0a0a0a;--surface-cream:#f7f5f2;--background:#fafafa;--primary:#E9FF7B;--primary-foreground:#000;--secondary:#f0ede8;--ink:#0b0b0b;--ink-soft:#525252;--muted-foreground:#736d61;--card:#fff;--border:rgba(0,0,0,.1);--radius:14px;--sans:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;} *{box-sizing:border-box} html,body{max-width:100%;overflow-x:hidden} img{max-width:100%;height:auto} iframe{max-width:100%} [hidden]{display:none!important} html{scroll-behavior:smooth} body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--surface-raised);-webkit-font-smoothing:antialiased;line-height:1.55} a{color:inherit} main>section{max-width:100%}
+/*HERO*/
+:root{--surface-raised:#0a0a0a;--primary:#E9FF7B;--ink:#f4f4f2;--soft:#a5a39a;--sans:"Inter",ui-sans-serif,system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:#000;font-family:var(--sans);color:var(--ink)}
+.v-hero{position:relative;min-height:520px;height:auto;max-height:none;padding-bottom:24px;overflow:hidden;background:var(--surface-raised);display:flex;flex-direction:column}
+.v-hero__canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.v-hero__scrim{position:absolute;inset:0;background:radial-gradient(120% 90% at 15% 0%,rgba(0,0,0,.15),rgba(0,0,0,.72) 70%),linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.1) 30%,rgba(0,0,0,.55));pointer-events:none}
+.v-nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1240px;margin:0 auto;width:100%;padding:22px 24px}
+.v-brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.01em}
+.v-brand{text-decoration:none;color:inherit}.v-logo{height:24px;width:auto;display:block;flex:none}.v-brand .n{padding-left:12px;border-left:1px solid rgba(255,255,255,.18)}
+.v-brand .n{font-size:12.5px;letter-spacing:.14em;color:var(--soft);font-weight:600}
+.v-nav__links{display:flex;align-items:center;gap:26px}
+.v-nav__links a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500;opacity:.85}
+.v-nav__links a:hover{opacity:1;color:var(--primary)}
+.v-nav__cta{border:1px solid rgba(233,255,123,.4);border-radius:999px;padding:9px 16px !important;font-size:13px !important;font-weight:600 !important;opacity:1 !important}
+.v-hero__inner{position:relative;z-index:3;flex:1;display:flex;flex-direction:column;justify-content:center;max-width:1240px;margin:0 auto;width:100%;padding:12px 24px 56px}
+.v-eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--primary)}
+.v-eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--primary)}
+.v-hero h1{font-size:clamp(38px,7vw,84px);line-height:.98;letter-spacing:-.03em;font-weight:800;margin:18px 0 0;max-width:15ch;text-wrap:balance}
+.v-hero h1 em{font-style:normal;color:var(--primary)}
+.v-lead{margin:20px 0 0;max-width:52ch;font-size:clamp(16px,2vw,19px);color:var(--soft);line-height:1.5}
+.v-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:15px 26px;font-size:15px;font-weight:700;text-decoration:none;cursor:pointer;border:0;transition:transform .15s,box-shadow .2s}
+.btn-primary{background:var(--primary);color:#000;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.34)}
+.btn-ghost{background:transparent;color:var(--ink);border:1px solid rgba(255,255,255,.28)}
+.btn-ghost:hover{border-color:var(--primary);color:var(--primary)}
+.v-stats{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.12)}
+.v-stats div strong{display:block;font-size:clamp(24px,3vw,34px);font-weight:800;letter-spacing:-.02em}
+.v-stats div span{font-size:12.5px;color:var(--soft);letter-spacing:.02em}
+@media(max-width:720px){.v-nav__links a:not(.v-nav__cta){display:none}.v-hero{height:auto;min-height:0;padding-bottom:8px}.v-hero__inner{padding-top:20px}}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
+
+/*SEC*/.rv{position:relative;background:var(--surface-raised);color:#fff;padding:clamp(56px,9vw,104px) 0;overflow:hidden;
+  --rv-muted:rgba(255,255,255,.74);
+  --rv-dim:rgba(255,255,255,.62);
+  --rv-line:rgba(255,255,255,.12);
+  --rv-chip:rgba(255,255,255,.06)}
+.rv__inner{max-width:1180px;margin:0 auto;padding:0 clamp(18px,5vw,40px);display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,6vw,80px);align-items:center}
+.rv__copy{min-width:0;max-width:560px}
+.rv__tag{display:inline-flex;align-items:center;gap:8px;background:var(--rv-chip);color:var(--primary);border:1px solid var(--rv-line);padding:8px 14px;border-radius:8px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1}
+.rv__title{margin:22px 0 0;font-size:clamp(30px,5vw,54px);font-weight:800;line-height:1.02;letter-spacing:-0.02em;text-wrap:balance;overflow-wrap:break-word}
+.rv__lead{margin:18px 0 0;font-size:clamp(15px,1.6vw,18px);line-height:1.6;color:var(--rv-muted);max-width:46ch}
+.rv__lead strong{color:#fff;font-weight:700}
+.rv__proof{margin-top:clamp(28px,4vw,40px);padding-top:26px;border-top:1px solid var(--rv-line)}
+.rv__proof-title{margin:0 0 16px;font-size:13.5px;font-weight:600;color:var(--rv-dim);letter-spacing:-0.01em;line-height:1.45}
+.rv__mentors{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv__mentors li{display:flex;flex-direction:column;gap:3px;min-width:0}
+.rv__mentors strong{font-size:14px;font-weight:700;color:#fff;letter-spacing:-0.01em}
+.rv__mentors span{font-size:12.5px;line-height:1.4;color:var(--rv-dim);overflow-wrap:anywhere}
+.rv__media{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0}
+.rv__reel{width:100%;max-width:400px}
+.rv__reel-frame{position:relative;width:100%;min-height:500px;background:#000;border:1px solid var(--rv-line);border-radius:16px;padding:14px;box-shadow:0 30px 80px rgba(0,0,0,.5);transition:transform .3s ease,box-shadow .3s ease;overflow:hidden}
+.rv__reel-frame:hover{transform:translateY(-3px);box-shadow:0 38px 90px rgba(0,0,0,.6)}
+.rv__reel-fallback{position:absolute;inset:0;z-index:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-decoration:none;color:#fff;text-align:center;padding:24px}
+.rv__reel-play{width:64px;height:64px;border-radius:50%;border:1px solid var(--rv-line);background:var(--rv-chip);display:flex;align-items:center;justify-content:center}
+.rv__reel-play::before{content:"";border-style:solid;border-width:11px 0 11px 18px;border-color:transparent transparent transparent #fff;margin-left:4px}
+.rv__reel-cta{font-size:14px;font-weight:700}
+.rv__reel-loading{font-size:12px;color:var(--rv-dim)}
+.rv__reel-fallback:focus-visible{outline:2px solid var(--primary);outline-offset:-4px;border-radius:12px}
+.instagram-media,.rv__reel-frame iframe,.instagram-media iframe{position:relative;z-index:1;min-width:0!important;max-width:100%!important;width:100%!important;margin:0 auto!important}
+.rv__media-caption{font-size:11px;letter-spacing:.09em;color:var(--rv-dim);font-weight:700;text-transform:uppercase}
+@keyframes rv-rise{to{opacity:1;transform:none}}
+.rv__tag,.rv__title,.rv__lead,.rv__proof,.rv__media{opacity:0;transform:translateY(18px);animation:rv-rise .65s cubic-bezier(.2,.7,.2,1) both}
+.rv__title{animation-delay:.05s}
+.rv__lead{animation-delay:.1s}
+.rv__proof{animation-delay:.18s}
+.rv__media{animation-delay:.12s}
+@media (max-width:900px){
+  .rv__inner{grid-template-columns:1fr;gap:40px}
+  .rv__media{order:-1}
+  .rv__copy{max-width:none}
+}
+@media (max-width:520px){
+  .rv__mentors{grid-template-columns:1fr;gap:12px}
+  .rv__mentors li{flex-direction:row;align-items:baseline;gap:8px}
+  .rv__mentors span::before{content:"— "}
+}
+@media (prefers-reduced-motion:reduce){
+  .rv__tag,.rv__title,.rv__lead,.rv__proof,.rv__media{animation:none;opacity:1;transform:none}
+  .rv__reel-frame{transition:none}
+  .rv__reel-frame:hover{transform:none}
+}
+
+.pg{background:var(--surface-cream);padding:72px 0}
+.pg__wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.pg__tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#000;background:var(--primary);border-radius:6px;padding:4px 10px}
+.pg__h{font-size:clamp(26px,4vw,42px);line-height:1.05;letter-spacing:-.02em;font-weight:800;margin:16px 0 0;color:#0b0b0b;text-wrap:balance}
+.pg__sub{color:var(--ink-soft);max-width:56ch;margin:12px 0 0}
+.pg__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0 0}
+.pg__card{background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.pg__video{position:relative;aspect-ratio:16/9;background:#000;cursor:pointer;overflow:hidden}
+.pg__video img{width:100%;height:100%;object-fit:cover;opacity:.86;transition:opacity .2s,transform .3s}
+.pg__video:hover img{opacity:1;transform:scale(1.03)}
+
+.pg__play{position:absolute;inset:0;margin:auto;width:60px;height:60px;display:flex;align-items:center;justify-content:center;background:var(--primary);color:#000;border-radius:50%;box-shadow:0 8px 26px rgba(0,0,0,.35);padding-left:3px}
+
+.pg__body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:9px;flex:1}
+.pg__cap{align-self:flex-start;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#3d4a13;background:rgba(233,255,123,.5);border-radius:6px;padding:3px 9px}
+.pg__name{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:2px 0 0;color:#0b0b0b}
+.pg__desc{color:var(--ink-soft);font-size:14px;margin:0}
+.pg__meta{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:5px;font-size:13px;color:#3a3a3a}
+.pg__meta span{font-weight:700;color:#0b0b0b}
+.pg__next{color:#000;background:var(--primary);border-radius:5px;padding:1px 7px;font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.pg__mentors{display:flex;flex-direction:column;gap:3px;margin-top:8px;padding-top:12px;border-top:1px solid var(--border);font-size:12.5px;color:#4a4a4a}
+@media(max-width:820px){.pg__grid{grid-template-columns:1fr;max-width:440px;margin-inline:auto}}
+
+.pg-modal{position:fixed;inset:0;z-index:120;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(5,6,4,.93)}
+.pg-modal[hidden]{display:none}
+.pg-modal__stage{width:min(1000px,94vw)}
+.pg-modal__ratio{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);background:#000}
+.pg-modal__ratio #pg-modal-slot,.pg-modal__ratio iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.pg-modal__close{position:absolute;top:18px;right:22px;width:44px;height:44px;border:0;border-radius:50%;background:var(--primary);color:#000;font-size:26px;line-height:1;cursor:pointer;font-weight:700}
+.pg-modal__close:hover{transform:scale(1.05)}
+@media(prefers-reduced-motion:reduce){.pg-modal__close:hover{transform:none}}
+
+.rut{background:var(--surface-raised);color:#f4f4f2;padding:88px 0}
+.rut__wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.rut__tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);border:1px solid rgba(233,255,123,.3);border-radius:999px;padding:6px 13px}
+.rut__title{font-size:clamp(30px,5vw,52px);line-height:1.03;letter-spacing:-.02em;font-weight:800;margin:20px 0 0;max-width:18ch;text-wrap:balance}
+.rut__title em{font-style:normal;color:var(--primary)}
+.rut__lead{color:#b8b6ad;max-width:60ch;margin:18px 0 0;font-size:clamp(15px,1.8vw,18px)}
+.rut__caps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:40px 0 0}
+.rut__cap{border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px;background:rgba(255,255,255,.02)}
+.rut__cap-k{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#000;background:var(--primary);border-radius:6px;padding:3px 9px}
+.rut__cap h3{margin:14px 0 6px;font-size:20px;font-weight:700}
+.rut__cap p{margin:0;color:#a8a69d;font-size:14px}
+.rut__combine{margin:22px 0 0;color:#d8d6cd;font-size:15px;font-weight:500}
+.rut__how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:40px 0 0;padding-top:30px;border-top:1px solid rgba(255,255,255,.12)}
+.rut__col .rut__num{font-size:clamp(22px,2.6vw,30px);font-weight:800;letter-spacing:-.02em;color:var(--primary)}
+.rut__col p{margin:8px 0 0;color:#a8a69d;font-size:14px}
+.rut__cta{display:inline-flex;align-items:center;gap:10px;margin:40px 0 0;background:var(--primary);color:#000;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:999px;transition:transform .15s}
+.rut__cta:hover{transform:translateY(-2px)}
+@media(max-width:760px){.rut__caps,.rut__how{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.rut__cta{transition:none}}
+
+.cl{background:var(--surface-raised);color:#f4f4f2}
+.cl__wrap{max-width:1120px;margin:0 auto;padding:80px 24px;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+.cl__tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--primary);border:1px solid rgba(233,255,123,.3);border-radius:999px;padding:6px 13px}
+.cl__h{font-size:clamp(30px,5vw,52px);line-height:1.02;letter-spacing:-.02em;font-weight:800;margin:18px 0 0}
+.cl__p{color:#b8b6ad;margin:16px 0 0;font-size:15.5px;max-width:52ch}
+.cl__cta{display:inline-flex;align-items:center;gap:10px;margin:26px 0 0;background:var(--primary);color:#000;font-weight:800;text-decoration:none;padding:16px 28px;border-radius:999px;transition:transform .15s,box-shadow .2s;box-shadow:0 10px 34px rgba(233,255,123,.25)}
+.cl__cta:hover{transform:translateY(-2px);box-shadow:0 14px 44px rgba(233,255,123,.4)}
+.cl__note{color:#8f8d84;font-size:12.5px;margin:12px 0 0;max-width:42ch}
+.cl__faq{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.cl__faq details{border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:2px 16px;background:rgba(255,255,255,.02)}
+.cl__faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 0;font-weight:600;font-size:14.5px}
+.cl__faq summary::-webkit-details-marker{display:none}
+.cl__faq details[open] summary span{transform:rotate(45deg)}
+.cl__faq summary span{transition:transform .18s;color:var(--primary);font-weight:800}
+.cl__faq p{margin:0 0 14px;color:#a8a69d;font-size:13.5px}
+.cl__footer{border-top:1px solid rgba(255,255,255,.1);padding:36px 24px 28px;max-width:1120px;margin:0 auto}
+.cl__foot-in{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.cl__logo{height:30px;width:auto;display:block}
+.cl__brand p{color:#8f8d84;font-size:13px;margin:12px 0 0;max-width:22ch}
+.cl__cols{display:flex;gap:44px;flex-wrap:wrap}
+.cl__cols div{display:flex;flex-direction:column;gap:8px}
+.cl__cols span{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6f6d64}
+.cl__cols a{color:#cfcdc4;text-decoration:none;font-size:13.5px}
+.cl__cols a:hover{color:var(--primary)}
+.cl__copy{color:#6f6d64;font-size:12px;margin-top:28px}
+@media(max-width:820px){.cl__wrap{grid-template-columns:1fr;gap:32px;padding:60px 24px}}
+@media(prefers-reduced-motion:reduce){.cl__cta{transition:none}}
+
+
+@media(max-width:560px){
+  .v-nav{flex-wrap:wrap;gap:10px;padding:14px 20px;max-width:100%}
+  .v-brand .n{display:none} .v-logo{height:22px}
+  .v-nav__cta{white-space:nowrap}
+  .v-hero,.v-hero__inner,.v-lead,.v-actions{min-width:0;max-width:100%}
+  .v-hero__inner{padding:6px 20px 38px}
+  .v-hero h1{font-size:clamp(28px,8vw,40px);line-height:1.05;overflow-wrap:break-word;max-width:100%}
+  .v-lead{font-size:15.5px;overflow-wrap:break-word}
+  .v-actions{gap:10px} .v-actions .btn{width:100%;justify-content:center;padding:15px 18px;white-space:normal}
+  .v-stats{gap:14px 22px;margin-top:28px;padding-top:20px}
+  .pg__wrap{padding:0 20px}.pg{padding:56px 0}.pg__h{font-size:clamp(26px,7.6vw,34px)}
+  .rut{padding:60px 0}.rut__wrap{padding:0 20px}.rut__title{font-size:clamp(27px,8vw,36px)}
+  .cl__wrap{padding:56px 20px;gap:30px}.cl__h{font-size:clamp(26px,7.6vw,34px)}
+  .cl__cta{width:100%;justify-content:center}
+  .cl__footer{padding:30px 20px 26px}.cl__foot-in{gap:24px}.cl__cols{gap:24px}
+  .pg-modal{padding:12px}.pg-modal__close{top:12px;right:14px;width:40px;height:40px}.pg-modal__stage{width:96vw}
+}</style></head><body>
+<section class="v-hero" id="inicio">
+  <canvas class="v-hero__canvas" id="fx" aria-hidden="true"></canvas>
+  <div class="v-hero__scrim" aria-hidden="true"></div>
+  <nav class="v-nav" aria-label="Principal">
+    <a class="v-brand" href="#inicio"><svg class="v-logo" role="img" aria-label="30X" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 371.23"><g><g><polygon fill="#f2f2f2" points="133.02 93.4 29.38 90.23 29.38 5.15 226.49 5.15 133.02 93.4"/><path fill="#f2f2f2" d="M315.54,243.89c0,25.08-6.98,47.18-20.89,66.23-13.93,19.08-32.66,34.04-56.21,44.87-23.53,10.82-49.91,16.24-79.14,16.24-35.4,0-66.16-6.88-92.29-20.64-26.11-13.73-48.46-35.38-67.01-64.95l77.83-53.1c5.85,9.97,12.9,18.48,21.14,25.51,8.26,7.05,17.37,12.63,27.34,16.77,9.97,4.12,20.96,6.18,32.99,6.18,10.65,0,20.11-1.36,28.37-4.12,8.24-2.76,14.86-6.95,19.83-12.63,5-5.67,7.48-12.63,7.48-20.89,0-8.94-2.76-16.07-8.26-21.39-5.5-5.32-12.45-9.19-20.86-11.6-8.44-2.41-17.63-3.62-27.59-3.62-4.82,0-9.97.43-15.47,1.28-5.5.88-10.67,2.06-15.47,3.62-4.82,1.56-9.29,3.54-13.41,5.93l-23.73-57.75,68.29-65.65h-.08L252.73,5.15h32.49l18.45,43.84-88.33,83.83c6.78,1.43,13.46,3.36,20.01,5.88,15.29,5.85,28.95,13.83,41,23.98,12.03,10.14,21.57,22.17,28.62,36.1,7.03,13.91,10.57,28.95,10.57,45.12Z"/><polygon fill="#eeff8d" points="1080 5.16 944.25 5.16 870.7 99.01 797.15 5.16 661.4 5.16 802.82 185.61 661.4 366.07 797.15 366.07 870.7 272.22 944.25 366.07 1080 366.07 938.57 185.61 1080 5.16"/><g><path fill="#f2f2f2" d="M565.45,366.01c-15.92,3.52-33.27,5.22-52.07,5.22s-36.86-1.76-53.1-5.32c-15.54-3.34-29.73-8.34-42.56-14.96-1.21-.6-2.41-1.23-3.59-1.88-26.99-14.79-47.38-36.1-61.11-63.95-13.76-27.84-20.61-61.01-20.61-99.5s6.15-72.01,20.61-99.5c1.88-3.57,3.84-6.98,5.87-10.24,28.87-46.15,88.88-62.64,136.63-36.48.2.13.43.23.63.35,5.87,3.26,11.35,6.83,16.44,10.8,15.09,11.6,26.89,26.29,35.88,44.46.03.03.03.08.05.1-9.97-5.67-21.69-8.49-35.15-8.49-14.19,0-26.51,2.96-36.91,8.89.08-.13.13-.28.2-.4-7.36,4.14-13.78,9.82-19.23,17.05-13.26,17-19.86,41.5-19.86,73.46,0,7.86.45,15.24,1.33,22.14,2.18,29.22,8.79,55.01,19.81,77.35,13.76,27.84,33.94,49.16,60.58,63.95,13.61,7.56,28.82,13.18,45.62,16.85.18.05.35.08.53.1Z"/><path fill="#f2f2f2" d="M459.75,5.22c15.92-3.52,33.27-5.22,52.07-5.22s36.86,1.76,53.1,5.32c15.54,3.34,29.73,8.34,42.56,14.96,1.21.6,2.41,1.23,3.59,1.88,26.99,14.79,47.38,36.1,61.11,63.95,13.76,27.84,20.61,61.01,20.61,99.5s-6.15,72.01-20.61,99.5c-1.88,3.57-3.84,6.98-5.87,10.24-28.87,46.15-88.88,62.64-136.63,36.48-.2-.13-.43-.23-.63-.35-5.87-3.26-11.35-6.83-16.44-10.8-15.09-11.6-26.89-26.29-35.88-44.46-.03-.03-.03-.08-.05-.1,9.97,5.67,21.69,8.49,35.15,8.49,14.19,0,26.51-2.96,36.91-8.89-.08.13-.13.28-.2.4,7.36-4.14,13.78-9.82,19.23-17.05,13.26-17,19.86-41.5,19.86-73.46,0-7.86-.45-15.24-1.33-22.14-2.18-29.22-8.79-55.01-19.81-77.35-13.76-27.84-33.94-49.16-60.58-63.95-13.61-7.56-28.82-13.18-45.62-16.85-.18-.05-.35-.08-.53-.1Z"/></g></g></g></svg><span class="n">EXPERTIZ EN VENTAS</span></a>
+    <div class="v-nav__links">
+      <a href="#programas">Los programas</a>
+      <a href="#admisiones">Inversión</a>
+      <a class="v-nav__cta" href="#programas">Conoce la vertical ↗</a>
+    </div>
+  </nav>
+  <div class="v-hero__inner">
+    <span class="v-eyebrow"><span class="dot"></span> Próxima cohorte · 6 de octubre 2026</span>
+    <h1>Método, LinkedIn e <em>IA</em> para tu operación comercial.</h1>
+    <p class="v-lead">Una ruta de tres programas: método comercial, LinkedIn e IA — con tu negocio como caso de trabajo.</p>
+    <div class="v-actions">
+      <a class="btn btn-primary" href="#conoce-la-vertical">Conoce nuestra vertical de ventas <span aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#programas">Ver los programas</a>
+    </div>
+    <div class="v-stats">
+      <div><strong>3</strong><span>Programas · una ruta</span></div>
+      <div><strong>32</strong><span>Entregables</span></div>
+      <div><strong>100%</strong><span>En vivo · online</span></div>
+    </div>
+  </div>
+</section>
+<main><section class="rv" id="conoce-la-vertical" aria-labelledby="rv-title">
+  <div class="rv__inner">
+    <div class="rv__copy">
+      <span class="rv__tag">En vivo · Próxima cohorte 6 de octubre</span>
+      <h2 class="rv__title" id="rv-title">La vertical, en un&nbsp;minuto.</h2>
+      <p class="rv__lead">Míralo por dentro: cómo se ve una ruta que trabaja sobre <strong>tu propio negocio</strong> — no una carpeta de apuntes.</p>
+
+      <div class="rv__proof">
+        <p class="rv__proof-title">Construida con mentores que levantaron las empresas que todos citan</p>
+        <ul class="rv__mentors">
+          <li><strong>Andrés Bilbao</strong><span>Co-fundador de Rappi</span></li>
+          <li><strong>Felipe Restrepo</strong><span>VP Growth en Habi · ex-YC</span></li>
+          <li><strong>Nicolás Rojas</strong><span>CEO de Dapta</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rv__media">
+      <div class="rv__reel" role="group" aria-label="Reel de presentación de Expertiz en Ventas en Instagram">
+        <div class="rv__reel-frame">
+          <a class="rv__reel-fallback" href="https://www.instagram.com/reel/Dcv4cLjigXA/" target="_blank" rel="noopener" aria-label="Ver el reel de presentación en Instagram">
+            <span class="rv__reel-play" aria-hidden="true"></span>
+            <span class="rv__reel-cta">Ver el reel en Instagram</span>
+            <span class="rv__reel-loading">Cargando reel…</span>
+          </a>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/Dcv4cLjigXA/" data-instgrm-version="14" style="background:transparent;border:0;margin:0 auto;max-width:400px;width:100%;"></blockquote>
+        </div>
+      </div>
+      <p class="rv__media-caption">Reel de presentación de la vertical</p>
+    </div>
+  </div>
+  <script async src="https://www.instagram.com/embed.js"></script>
+</section>
+
+<section class="pg" id="programas" aria-labelledby="pg-title">
+  <div class="pg__wrap">
+    <div class="pg__head">
+      <span class="pg__tag">Los programas</span>
+      <h2 class="pg__h" id="pg-title">Tres programas. Una sola vertical.</h2>
+      <p class="pg__sub">Míralos por dentro y quédate con lo que tu operación necesita.</p>
+    </div>
+    <div class="pg__grid">
+      <article class="pg__card">
+        <div class="pg__video" data-yt="DY3WjlCAMbU" role="button" tabindex="0" aria-label="Reproducir presentación de Sales Machine">
+          <img src="https://img.youtube.com/vi/DY3WjlCAMbU/hqdefault.jpg" alt="Sales Machine" loading="lazy" width="480" height="360">
+          <span class="pg__play"><svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="pg__body">
+          <span class="pg__cap">Método</span>
+          <h3 class="pg__name">Sales Machine</h3>
+          <p class="pg__desc">Construye el sistema comercial repetible: proceso, pipeline y rutinas.</p>
+          <ul class="pg__meta">
+            <li><span>5 semanas</span> · inicia 9 nov 2026</li>
+            <li>Lun y mié · 8:00–9:30 a.&nbsp;m. (COL)</li>
+          </ul>
+          <div class="pg__mentors"><span>Felipe Restrepo · Habi (ex-YC)</span><span>Andrés Bilbao · Rappi</span></div>
+        </div>
+      </article>
+      <article class="pg__card">
+        <div class="pg__video" data-yt="movGc4kW36k" role="button" tabindex="0" aria-label="Reproducir presentación de Ventas con LinkedIn">
+          <img src="https://img.youtube.com/vi/movGc4kW36k/hqdefault.jpg" alt="Ventas con LinkedIn" loading="lazy" width="480" height="360">
+          <span class="pg__play"><svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="pg__body">
+          <span class="pg__cap">Canal</span>
+          <h3 class="pg__name">Ventas con LinkedIn</h3>
+          <p class="pg__desc">Autoridad digital y prospección: abre conversaciones que se vuelven pipeline.</p>
+          <ul class="pg__meta">
+            <li><span>6 semanas</span> · inicia 6 oct 2026 · <b class="pg__next">próxima</b></li>
+            <li>Mar y jue · 12:00–1:00 p.&nbsp;m. (COL)</li>
+          </ul>
+          <div class="pg__mentors"><span>Daniela Luque · referente de LinkedIn</span></div>
+        </div>
+      </article>
+      <article class="pg__card">
+        <div class="pg__video" data-yt="iwYbbAnG0OI" role="button" tabindex="0" aria-label="Reproducir presentación de AI Sales">
+          <img src="https://img.youtube.com/vi/iwYbbAnG0OI/hqdefault.jpg" alt="AI Sales" loading="lazy" width="480" height="360">
+          <span class="pg__play"><svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="pg__body">
+          <span class="pg__cap">IA</span>
+          <h3 class="pg__name">AI Sales</h3>
+          <p class="pg__desc">Pon la inteligencia artificial a operar tu venta: agentes y automatización.</p>
+          <ul class="pg__meta">
+            <li><span>5 semanas</span> · inicia 6 oct 2026 · <b class="pg__next">próxima</b></li>
+            <li>Mar y jue · 4:00–6:00 p.&nbsp;m. (COL)</li>
+          </ul>
+          <div class="pg__mentors"><span>Nicolás Rojas · CEO de Dapta</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="pg-modal" id="pg-modal" hidden>
+    <button class="pg-modal__close" type="button" aria-label="Cerrar video">&times;</button>
+    <div class="pg-modal__stage"><div class="pg-modal__ratio"><div id="pg-modal-slot"></div></div></div>
+  </div>
+  <script>
+  (function(){
+    var modal=document.getElementById('pg-modal'), slot=document.getElementById('pg-modal-slot');
+    function open(id){
+      slot.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0&modestbranding=1" title="Presentación del programa" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>';
+      modal.hidden=false; document.body.style.overflow='hidden';
+      modal.querySelector('.pg-modal__close').focus();
+    }
+    function close(){ modal.hidden=true; slot.innerHTML=''; document.body.style.overflow=''; }
+    document.querySelectorAll('.pg__video').forEach(function(v){
+      function go(){ open(v.getAttribute('data-yt')); }
+      v.addEventListener('click',go);
+      v.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
+    });
+    modal.addEventListener('click',function(e){ if(e.target===modal) close(); });
+    modal.querySelector('.pg-modal__close').addEventListener('click',close);
+    document.addEventListener('keydown',function(e){ if(e.key==='Escape' && !modal.hidden) close(); });
+  })();
+  </script>
+</section>
+
+<section class="rut" id="ruta" aria-labelledby="rut-title">
+  <div class="rut__wrap">
+    <span class="rut__tag">Tu ruta</span>
+    <h2 class="rut__title" id="rut-title">Tu ruta sale del <em>diagnóstico</em> de tu llamada.</h2>
+    <p class="rut__lead">No es una secuencia fija ni una talla única. En la llamada con el equipo de admisiones diagnosticamos tu operación y definimos qué programas —y en qué orden— mueven más tu resultado. Tomas uno, dos o los tres.</p>
+    <a class="rut__cta" href="https://wa.me/?text=Hola%2C%20quiero%20confirmar%20mi%20llamada%20con%20el%20equipo%20de%20admisiones%20de%2030X%20%E2%80%94%20ruta%20Expertiz%20en%20Ventas." target="_blank" rel="noopener">Confirma tu llamada con el equipo de admisiones <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<section class="cl" id="admisiones" aria-labelledby="cl-title">
+  <div class="cl__wrap">
+    <div class="cl__inv">
+      <span class="cl__tag">Inversión</span>
+      <h2 class="cl__h" id="cl-title">USD 1.950 por programa.</h2>
+      <p class="cl__p">Sin combos ni descuentos. Incluye sesiones en vivo, mentores y los 32 entregables. Próximos inicios: <b>6 de octubre</b> (LinkedIn y AI&nbsp;Sales) y <b>9 de noviembre</b> (Sales Machine), 2026.</p>
+      <a class="cl__cta" href="https://wa.me/?text=Hola%2C%20quiero%20confirmar%20mi%20llamada%20con%20el%20equipo%20de%20admisiones%20de%2030X%20%E2%80%94%20ruta%20Expertiz%20en%20Ventas." target="_blank" rel="noopener">Confirma tu llamada con el equipo de admisiones <span aria-hidden="true">→</span></a>
+      <p class="cl__note">Se abre WhatsApp con el mensaje listo — abre el chat de admisiones que te corresponde.</p>
+    </div>
+    <div class="cl__faq">
+      <details><summary>¿Puedo tomar un solo programa?<span aria-hidden="true">+</span></summary><p>Sí. Cada programa vale USD 1.950 y funciona por sí solo. En la llamada definimos si te conviene uno, dos o los tres.</p></details>
+      <details><summary>¿Cómo defino mi ruta?<span aria-hidden="true">+</span></summary><p>En la llamada de admisiones hacemos un diagnóstico de tu operación y armamos la ruta —qué programas y en qué orden— que más mueve tu resultado.</p></details>
+      <details><summary>¿En qué horario son las sesiones?<span aria-hidden="true">+</span></summary><p>En vivo, hora Colombia, y quedan grabadas. Sales Machine: lun y mié 8:00–9:30&nbsp;a.m. · LinkedIn: mar y jue 12:00–1:00&nbsp;p.m. · AI Sales: mar y jue 4:00–6:00&nbsp;p.m.</p></details>
+    </div>
+  </div>
+  <footer class="cl__footer">
+    <div class="cl__foot-in">
+      <div class="cl__brand"><svg class="cl__logo" role="img" aria-label="30X" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 371.23"><g><g><polygon fill="#f2f2f2" points="133.02 93.4 29.38 90.23 29.38 5.15 226.49 5.15 133.02 93.4"/><path fill="#f2f2f2" d="M315.54,243.89c0,25.08-6.98,47.18-20.89,66.23-13.93,19.08-32.66,34.04-56.21,44.87-23.53,10.82-49.91,16.24-79.14,16.24-35.4,0-66.16-6.88-92.29-20.64-26.11-13.73-48.46-35.38-67.01-64.95l77.83-53.1c5.85,9.97,12.9,18.48,21.14,25.51,8.26,7.05,17.37,12.63,27.34,16.77,9.97,4.12,20.96,6.18,32.99,6.18,10.65,0,20.11-1.36,28.37-4.12,8.24-2.76,14.86-6.95,19.83-12.63,5-5.67,7.48-12.63,7.48-20.89,0-8.94-2.76-16.07-8.26-21.39-5.5-5.32-12.45-9.19-20.86-11.6-8.44-2.41-17.63-3.62-27.59-3.62-4.82,0-9.97.43-15.47,1.28-5.5.88-10.67,2.06-15.47,3.62-4.82,1.56-9.29,3.54-13.41,5.93l-23.73-57.75,68.29-65.65h-.08L252.73,5.15h32.49l18.45,43.84-88.33,83.83c6.78,1.43,13.46,3.36,20.01,5.88,15.29,5.85,28.95,13.83,41,23.98,12.03,10.14,21.57,22.17,28.62,36.1,7.03,13.91,10.57,28.95,10.57,45.12Z"/><polygon fill="#eeff8d" points="1080 5.16 944.25 5.16 870.7 99.01 797.15 5.16 661.4 5.16 802.82 185.61 661.4 366.07 797.15 366.07 870.7 272.22 944.25 366.07 1080 366.07 938.57 185.61 1080 5.16"/><g><path fill="#f2f2f2" d="M565.45,366.01c-15.92,3.52-33.27,5.22-52.07,5.22s-36.86-1.76-53.1-5.32c-15.54-3.34-29.73-8.34-42.56-14.96-1.21-.6-2.41-1.23-3.59-1.88-26.99-14.79-47.38-36.1-61.11-63.95-13.76-27.84-20.61-61.01-20.61-99.5s6.15-72.01,20.61-99.5c1.88-3.57,3.84-6.98,5.87-10.24,28.87-46.15,88.88-62.64,136.63-36.48.2.13.43.23.63.35,5.87,3.26,11.35,6.83,16.44,10.8,15.09,11.6,26.89,26.29,35.88,44.46.03.03.03.08.05.1-9.97-5.67-21.69-8.49-35.15-8.49-14.19,0-26.51,2.96-36.91,8.89.08-.13.13-.28.2-.4-7.36,4.14-13.78,9.82-19.23,17.05-13.26,17-19.86,41.5-19.86,73.46,0,7.86.45,15.24,1.33,22.14,2.18,29.22,8.79,55.01,19.81,77.35,13.76,27.84,33.94,49.16,60.58,63.95,13.61,7.56,28.82,13.18,45.62,16.85.18.05.35.08.53.1Z"/><path fill="#f2f2f2" d="M459.75,5.22c15.92-3.52,33.27-5.22,52.07-5.22s36.86,1.76,53.1,5.32c15.54,3.34,29.73,8.34,42.56,14.96,1.21.6,2.41,1.23,3.59,1.88,26.99,14.79,47.38,36.1,61.11,63.95,13.76,27.84,20.61,61.01,20.61,99.5s-6.15,72.01-20.61,99.5c-1.88,3.57-3.84,6.98-5.87,10.24-28.87,46.15-88.88,62.64-136.63,36.48-.2-.13-.43-.23-.63-.35-5.87-3.26-11.35-6.83-16.44-10.8-15.09-11.6-26.89-26.29-35.88-44.46-.03-.03-.03-.08-.05-.1,9.97,5.67,21.69,8.49,35.15,8.49,14.19,0,26.51-2.96,36.91-8.89-.08.13-.13.28-.2.4,7.36-4.14,13.78-9.82,19.23-17.05,13.26-17,19.86-41.5,19.86-73.46,0-7.86-.45-15.24-1.33-22.14-2.18-29.22-8.79-55.01-19.81-77.35-13.76-27.84-33.94-49.16-60.58-63.95-13.61-7.56-28.82-13.18-45.62-16.85-.18-.05-.35-.08-.53-.1Z"/></g></g></g></svg><p>La mejor educación ejecutiva de Latinoamérica.</p></div>
+      <nav class="cl__cols" aria-label="Pie">
+        <div><span>Programas</span><a href="#programas">Sales Machine</a><a href="#programas">Ventas con LinkedIn</a><a href="#programas">AI Sales</a></div>
+        <div><span>La vertical</span><a href="#inicio">Presentación</a><a href="#ruta">Tu ruta</a><a href="#admisiones">Inversión</a></div>
+        <div><span>Admisiones</span><a href="https://wa.me/?text=Hola%2C%20quiero%20confirmar%20mi%20llamada%20con%20el%20equipo%20de%20admisiones%20de%2030X%20%E2%80%94%20ruta%20Expertiz%20en%20Ventas." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+      </nav>
+    </div>
+    <div class="cl__copy">© 2026 30X · Expertiz en Ventas</div>
+  </footer>
+</section>
+</main>
+<script>
+(function(){
+  const c=document.getElementById('fx');const gl=c.getContext('webgl',{antialias:true,alpha:false});
+  if(!gl){c.style.background='radial-gradient(80% 120% at 20% 0%,#16210a,#0a0a0a)';return;}
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const vs=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+  const fs=`precision highp float;uniform vec2 uRes;uniform float uT;
+  float hash(vec2 p){return fract(sin(dot(p,vec2(41.3,289.1)))*43758.5453);}
+  float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
+    float a=hash(i),b=hash(i+vec2(1.,0.)),cc=hash(i+vec2(0.,1.)),d=hash(i+vec2(1.,1.));
+    return mix(mix(a,b,f.x),mix(cc,d,f.x),f.y);}
+  float fbm(vec2 p){float s=0.,a=.5;for(int i=0;i<4;i++){s+=a*noise(p);p*=1.92;a*=.5;}return s;}
+  void main(){
+    vec2 uv=(gl_FragCoord.xy-.5*uRes)/uRes.y;
+    float t=uT*0.05;
+    vec2 p=uv*2.1;
+    // campo escalar deformado (distinto al mesh-gradient: aqui sacamos CONTORNOS que fluyen)
+    float warp=fbm(p*0.7+vec2(-t*0.7,t*0.5));
+    float f=fbm(p+1.8*vec2(warp,fbm(p*0.9+3.1-t*0.3)));
+    // bandas/contornos que viajan
+    float bands=0.5+0.5*sin(f*17.0 - uT*0.55);
+    float ink=pow(bands,7.0);
+    // segundo set de lineas mas finas, en contra
+    float bands2=0.5+0.5*sin(f*33.0 + uT*0.32);
+    ink+=0.35*pow(bands2,14.0);
+    vec3 LIMA=vec3(0.914,1.0,0.482);
+    vec3 col=vec3(0.017,0.02,0.015);
+    col+=LIMA*ink*(0.15+0.28*smoothstep(0.15,0.85,f));
+    // brillo tenue hacia arriba-izquierda
+    col+=LIMA*0.04*smoothstep(1.1,0.0,length(uv-vec2(-0.7,0.5)));
+    gl_FragColor=vec4(col,1.);
+  }`;
+  function sh(t,s){const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);return o;}
+  const prog=gl.createProgram();gl.attachShader(prog,sh(gl.VERTEX_SHADER,vs));gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,fs));gl.linkProgram(prog);gl.useProgram(prog);
+  const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+  const loc=gl.getAttribLocation(prog,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+  const uRes=gl.getUniformLocation(prog,'uRes'),uT=gl.getUniformLocation(prog,'uT');
+  function size(){const dpr=Math.min(devicePixelRatio||1,2);const w=c.clientWidth,h=c.clientHeight;c.width=w*dpr;c.height=h*dpr;gl.viewport(0,0,c.width,c.height);gl.uniform2f(uRes,c.width,c.height);}
+  addEventListener('resize',size);size();
+  let start=null;
+  function frame(ts){if(start===null)start=ts;gl.uniform1f(uT,(ts-start)/1000);gl.drawArrays(gl.TRIANGLES,0,3);if(!reduce)requestAnimationFrame(frame);}
+  requestAnimationFrame(frame);
+  if(reduce){gl.uniform1f(uT,8.0);gl.drawArrays(gl.TRIANGLES,0,3);}
+})();
+</script></body></html>
